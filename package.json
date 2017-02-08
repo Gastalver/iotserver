@@ -1,0 +1,16 @@
+{
+  "name": "iotserver",
+  "version": "0.0.0",
+  "description": "Servidor con API REST para interactuar con cosas conectadas a internet (IOT)",
+  "main": "server.js",
+  "scripts": {
+    "monitoriza": "nodemon server.js localhost 3000",
+    "test": "mocha"
+  },
+  "author": "Miguel Gastalver",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1"
+  }
+}
