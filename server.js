@@ -10,9 +10,12 @@ var app = express();
 app.use(bodyparser.urlencoded({ extended: false }));
 app.use(bodyparser.json());
 
+var contador = 0;
 
 app.get('/', function(req, res) {
-    res.status(200).send("Conectado al servidor local");
+    contador+=1;
+    console.log("Servidor conectado");
+    res.status(200).send("Conectado al servidor local por " + contador + " vez.");
 });
 
 app.listen(3000, function(){
